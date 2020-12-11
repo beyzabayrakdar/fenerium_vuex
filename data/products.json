@@ -1,0 +1,46 @@
+[{
+        "id": 1,
+        "title": "Erkek Gri Tribun Basic Eşofman Altı",
+        "image": "https://fenerium.com/Fenerium/media/images/urunler/TK050E9Y01301.jpg",
+        "price": 149.95,
+        "category": [
+            "giyim/sporgiyim",
+            "antrenman/eşofman-altı"
+        ],
+        "colors": [
+            "blue",
+            "grey"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Erkek Gri Basket Eşofman Altı",
+        "image": "https://fenerium.com/Fenerium/media/images/urunler/TK050E9S02301.jpg",
+        "price": 139.95,
+        "category": [
+            "giyim/sporgiyim",
+            "antrenman/eşofman-altı"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Erkek Lacivert Aktif Tek Alt",
+        "image": "https://fenerium.com/Fenerium/media/images/urunler/TK050EAY01407.jpg",
+        "price": 164.95,
+        "category": [
+            "giyim/sporgiyim",
+            "antrenman/eşofman-altı"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Erkek Lacivert Kolej Fenerbahçe 1907 Tek Alt",
+        "image": "https://fenerium.com/Fenerium/media/images/urunler/TK050E9Y01301.jpg",
+        "price": 149.95,
+        "category": [
+            "giyim/sporgiyim",
+            "antrenman/eşofman-altı"
+        ]
+    }
+
+]

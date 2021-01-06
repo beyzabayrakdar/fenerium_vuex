@@ -11,8 +11,6 @@ import HeaderMenu from "@/components/HeaderMenu"
 import Footer from "@/components/Footer"
 
 import Cookies from 'js-cookie'
-import * as firebase from 'firebase/app'
-import 'firebase/auth'
 
 export default {
   components:{
@@ -30,12 +28,12 @@ export default {
   asyncData() {},
   methods: {
     setupFirebase() {
-       this.$fire.auth().onAuthStateChanged(user => {
+       this.$fire.auth.onAuthStateChanged(user => {
         if (user) {
           // User is signed in.
           console.log('signed in')
-          firebase
-            .auth()
+          this.$fire
+            .auth
             .currentUser.getIdToken(true)
             .then(token => Cookies.set('access_token', token))
           this.loggedIn = true

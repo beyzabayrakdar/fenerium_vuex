@@ -919,8 +919,8 @@
                             <span class="text">GİRİŞ YAP</span>
                         </button>
                         <span v-if="loggedIn">Yes</span>
-                            <span v-else>No</span> 
-                            
+                            <span v-else>No</span>
+
                             <div>
                                 <button  v-if="loggedIn" style="color=pink" @click="signOut">
                                     ÇIKIŞ YAP
@@ -1023,7 +1023,7 @@ export default {
         redirect('/login')
       }
     } else {
-      var user =  this.$fire.auth().currentUser
+      var user =  this.$fire.auth.currentUser
       if (!user) {
         redirect('/login')
       }
@@ -1031,7 +1031,7 @@ export default {
     }
   },
   created(){
-       this.$fire.auth().onAuthStateChanged(user=> {
+       this.$fire.auth.onAuthStateChanged(user=> {
           this.loggedIn = !!user;
           if(user){
               this.loggedIn=true;

@@ -6,227 +6,6 @@
       </button>
 
       <div class="tab-content">
-        <div id="signIn" class="tab-pane">
-          <div class="modal-header">
-            <h5 class="modal-title">Üye Girişi</h5>
-          </div>
-          <div class="modal-body">
-            <div class="desc">
-              <p>
-                <strong>Fenerbahçe’ye</strong> Dair <br />
-                Her Şey İçin, Hesabın Burada
-              </p>
-            </div>
-
-            <form
-              action="/"
-              class="primary-form login"
-              data-toggle="loginForm"
-              method="post"
-              novalidate="novalidate"
-              @submit.prevent="pressed"
-            >
-              <input
-                name="__RequestVerificationToken"
-                type="hidden"
-                value="o8-Ut8HlKL85SHcHSziOhy5S88OEDRvq7tppDfWUv1i4in8i8-S5HpYlPpwSqkvqCTg34MZrNxWfjD-Cf4iRrWsGMXmCO7LlsCtvXjRIcdg1"
-              />
-              <div class="form-header">
-                <div class="form-group rendered">
-                  <input
-                    class="form-control requiredEmail"
-                    type="email"
-                    name="email"
-                    data-msg-required="* Lütfen bu alanı doldurun."
-                    data-msg-email="* Lütfen geçerli bir e-posta adresi girin."
-                    placeholder="E-Posta"
-                    v-model="email"
-                  />
-                </div>
-                <div class="form-group rendered">
-                  <input
-                    class="form-control required"
-                    type="password"
-                    name="password"
-                    data-msg-required="* Lütfen bu alanı doldurun."
-                    placeholder="Şifre"
-                    v-model="password"
-                  />
-                </div>
-                <div class="error" v-if="error">{{error.message}}</div>
-              </div>
-              <div class="form-body">
-                <div class="form-group-wrapper">
-                  <div class="form-group active success rendered">
-                    <label class="check-wrapper">
-                      <div class="icheckbox_primary" style="position: relative">
-                        <input
-                          class="primary-icheck"
-                          type="checkbox"
-                          name="rememberMe"
-                          style="position: absolute; opacity: 0"
-                        /><ins
-                          class="iCheck-helper"
-                          style="
-                            position: absolute;
-                            top: 0%;
-                            left: 0%;
-                            display: block;
-                            width: 100%;
-                            height: 100%;
-                            margin: 0px;
-                            padding: 0px;
-                            background: rgb(255, 255, 255);
-                            border: 0px;
-                            opacity: 0;
-                          "
-                        ></ins>
-                      </div>
-                      <span class="text">Beni Hatırla</span>
-                    </label>
-                  </div>
-                  <nav class="nav">
-                    <a
-                      href="#passwordReminder"
-                      data-toggle="tab"
-                      class="text forget-password-link"
-                      title=""
-                      >Şifreni mi unuttun?</a
-                    >
-                  </nav>
-                </div>
-                <div class="form-group g-recaptcha-wrap rendered">
-                  <div data-custom-captcha="">
-                    <div style="width: 304px; height: 78px">
-                      <div>
-                        <iframe
-                          src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Levt9IUAAAAAP2SYIqmdEt-_anP6mc3jmz-ZRIs&amp;co=aHR0cHM6Ly9mZW5lcml1bS5jb206NDQz&amp;hl=tr&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=normal&amp;cb=ek8sm1mvivtd"
-                          width="304"
-                          height="78"
-                          role="presentation"
-                          name="a-x9xubiz57l1v"
-                          frameborder="0"
-                          scrolling="no"
-                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                        ></iframe>
-                      </div>
-                      <textarea
-                        id="g-recaptcha-response"
-                        name="g-recaptcha-response"
-                        class="g-recaptcha-response"
-                        style="
-                          width: 250px;
-                          height: 40px;
-                          border: 1px solid rgb(193, 193, 193);
-                          margin: 10px 25px;
-                          padding: 0px;
-                          resize: none;
-                          display: none;
-                        "
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn bg-cobalt text-white text-bold">
-                OTURUM AÇ
-              </button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <nav class="nav">
-              <a href="#signUp" data-toggle="tab" class="modal-link"
-                ><span>Henüz Üye Değil misin?</span> Şimdi Katıl</a
-              >
-            </nav>
-          </div>
-        </div>
-        <div id="passwordReminder" class="tab-pane fade">
-          <div class="modal-header">
-            <h5 class="modal-title">Üye Girişi</h5>
-          </div>
-          <div class="modal-body">
-            <div class="desc">
-              <p><strong>Şifreni mi</strong> Unuttun?</p>
-            </div>
-            <div class="sub-desc">
-              <p>
-                E-posta adresini gir; şifre sıfırlama <br />
-                talimatlarını sana e-posta ile gönderelim.
-              </p>
-            </div>
-            <form
-              id="passwordReminderForm"
-              class="primary-form login"
-              data-toggle="loginForm"
-              action="/Account/RetrievePassword"
-              method="post"
-              novalidate="novalidate"
-            >
-              <input
-                name="__RequestVerificationToken"
-                type="hidden"
-                value="XrVhfq-QrNszXASHopVRrjiDn9A1ewg4p3vtxfRr6kEMB0AAM4d9rfzMkF86nChfxQe5zxEr3RBNtROsmhuzixuEpUVteCvLLrbAp106ApM1"
-              />
-              <div class="form-header">
-                <div class="form-group rendered">
-                  <input
-                    class="form-control requiredEmail"
-                    type="email"
-                    name="email"
-                    data-msg-required="* Lütfen bu alanı doldurun."
-                    data-msg-email="* Lütfen geçerli bir e-posta adresi girin."
-                    placeholder="Kayıtlı E Posta Adresin"
-                  />
-                </div>
-                <div class="form-group g-recaptcha-wrap rendered">
-                  <div data-custom-captcha="">
-                    <div style="width: 304px; height: 78px">
-                      <div>
-                        <iframe
-                          src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Levt9IUAAAAAP2SYIqmdEt-_anP6mc3jmz-ZRIs&amp;co=aHR0cHM6Ly9mZW5lcml1bS5jb206NDQz&amp;hl=tr&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=normal&amp;cb=krgwt8eqo56x"
-                          width="304"
-                          height="78"
-                          role="presentation"
-                          name="a-s1htd8imzd9f"
-                          frameborder="0"
-                          scrolling="no"
-                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                        ></iframe>
-                      </div>
-                      <textarea
-                        id="g-recaptcha-response-1"
-                        name="g-recaptcha-response"
-                        class="g-recaptcha-response"
-                        style="
-                          width: 250px;
-                          height: 40px;
-                          border: 1px solid rgb(193, 193, 193);
-                          margin: 10px 25px;
-                          padding: 0px;
-                          resize: none;
-                          display: none;
-                        "
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-body">
-                <button type="submit" class="btn bg-cobalt text-white text-bold">
-                  SIFIRLA
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <nav class="nav">
-              <a href="#signIn" data-toggle="tab" class="modal-link"
-                ><span>Alternatif olarak geri dön:</span> Oturum Aç</a
-              >
-            </nav>
-          </div>
-        </div>
         <div id="signUp" class="tab-pane fade active show">
           <div class="modal-header">
             <h5 class="modal-title">Üye Ol</h5>
@@ -250,6 +29,7 @@
               id="registerForm"
               method="post"
               novalidate="novalidate"
+              @submit="signup"
             >
               <input
                 name="__RequestVerificationToken"
@@ -262,6 +42,7 @@
                     class="form-control requiredEmail"
                     type="email"
                     name="email"
+                    v-model="email"
                     data-msg-required="* Lütfen bu alanı doldurun."
                     data-msg-email="* Lütfen geçerli bir e-posta adresi girin."
                     placeholder="E-Posta"
@@ -290,6 +71,7 @@
                     class="form-control required userPassword"
                     type="password"
                     name="password"
+                    v-model="password"
                     data-msg-required="* Lütfen bu alanı doldurun."
                     placeholder="Şifre"
                   />
@@ -3815,39 +3597,9 @@
                     <input type="hidden" class="phone-tel-data" name="phone" value="" />
                   </div>
                 </div>
-                <div class="form-group rendered">
-                  <input
-                    class="form-control birthday-mask birthdayValidation required"
-                    type="text"
-                    name="userBirthday"
-                    data-msg-required="* Lütfen bu alanı doldurun."
-                    placeholder="Doğum Tarihi"
-                    maxlength="10"
-                  />
-                </div>
               </div>
               <div class="form-body">
-                <div class="checkbox-group-wrapper">
-                  <div class="form-group g-recaptcha-wrap rendered">
-                    <div data-custom-captcha="">
-                      <div style="width: 304px; height: 78px">
-                        <div>
-                          <iframe
-                            src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6Levt9IUAAAAAP2SYIqmdEt-_anP6mc3jmz-ZRIs&amp;co=aHR0cHM6Ly9mZW5lcml1bS5jb206NDQz&amp;hl=tr&amp;v=qc5B-qjP0QEimFYUxcpWJy5B&amp;size=normal&amp;cb=1gix0mkvp0y6"
-                            width="304"
-                            height="78"
-                            role="presentation"
-                            name="a-f83exqcenfgu"
-                            frameborder="0"
-                            scrolling="no"
-                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                          ></iframe>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <button type="submit" class="btn bg-cobalt text-white text-bold" v-on:click="signUp">
+                <button type="submit" class="btn bg-cobalt text-white text-bold">
                   KAYDOL
                 </button>
               </div>
@@ -3879,13 +3631,13 @@
       }
     },
     methods: {
-      signup: function(){
+      signup: function(e){
+        e.preventDefault();
         this.$fire.auth.createUserWithEmailAndPassword(this.email, this.password)
           .then(function(user){
-            alert('Your account has been created!')
+            alert('Your account has been created! Email: ' + user.user.email);
           },
-          function(error) {
-            alert('Ooops. ' + error.message)
+          function(error) {            alert('Ooops. ' + error.message)
           }
         )
       }

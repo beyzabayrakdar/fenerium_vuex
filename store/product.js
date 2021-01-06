@@ -35,4 +35,4 @@ export const getters = {
     getProduct(state) {
         return state.product;
     }
-};
+}

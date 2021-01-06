@@ -3868,18 +3868,19 @@
 
 
 <script>
-  import firebase from 'firebase'
+
   export default {
     name: 'kaydol',
     data: function(){
       return{
         email: '',
-        password: ''
+        password: '',
+        error: ''
       }
     },
     methods: {
       signup: function(){
-        firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+        this.$fire.auth.createUserWithEmailAndPassword(this.email, this.password)
           .then(function(user){
             alert('Your account has been created!')
           },

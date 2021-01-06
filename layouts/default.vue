@@ -30,7 +30,7 @@ export default {
   asyncData() {},
   methods: {
     setupFirebase() {
-      firebase.auth().onAuthStateChanged(user => {
+       this.$fire.auth().onAuthStateChanged(user => {
         if (user) {
           // User is signed in.
           console.log('signed in')

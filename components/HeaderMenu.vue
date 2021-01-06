@@ -1004,7 +1004,7 @@ export default {
     methods:{
        async signOut(){
             try{
-                const data = await firebase.auth().signOut();
+                const data = await  this.$fire.auth().signOut();
                 console.log(data);
                 this.$router.push({ name : "login.aspx"})
             }
@@ -1023,7 +1023,7 @@ export default {
         redirect('/login')
       }
     } else {
-      var user = firebase.auth().currentUser
+      var user =  this.$fire.auth().currentUser
       if (!user) {
         redirect('/login')
       }
@@ -1031,7 +1031,7 @@ export default {
     }
   },
   created(){
-      firebase.auth().onAuthStateChanged(user=> {
+       this.$fire.auth().onAuthStateChanged(user=> {
           this.loggedIn = !!user;
           if(user){
               this.loggedIn=true;

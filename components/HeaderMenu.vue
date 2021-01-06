@@ -886,13 +886,11 @@
                                             <i class="fa"></i>
                                         </span>
                                     </a>
-
                                 </li>
-
                         </ul>
                     </nav>
                     <div class="search-box">
-                        <span class="text">Ürün, Model ve Renk Ara</span>
+                        <a href="/search" class="text">Ürün, Model ve Renk Ara</a>
                         <i class="fas fa-search"></i>
                     </div>
                 </div>
@@ -920,6 +918,14 @@
                         <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#loginModal">
                             <span class="text">GİRİŞ YAP</span>
                         </button>
+                        <span v-if="loggedIn">Yes</span>
+                            <span v-else>No</span> 
+                            
+                            <div>
+                                <button  v-if="loggedIn" style="color=pink" @click="signOut">
+                                    ÇIKIŞ YAP
+                                </button>
+                            </div>
                     </div>
             </div>
 
@@ -981,23 +987,59 @@
 </template>
 
 <script>
-
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
+import { getUserFromCookie, getUserFromSession } from '@/helpers'
 export default {
-  components: {},
-  data: () => {
-    return {
-    };
+    data(){
+        return {
+            loggedIn : false,
+        }
+    },
+    computed: {
+        basket(){
+            return this.$store.getters["basket/getBasketItems"];
+        }
+    },
+    methods:{
+       async signOut(){
+            try{
+                const data = await firebase.auth().signOut();
+                console.log(data);
+                this.$router.push({ name : "login.aspx"})
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
   },
-  created() {
-
-  },
-  computed: {
-    basket() {
-      return this.$store.getters["basket/getBasketItems"];
+  asyncData({ req, redirect }) {
+    if (process.server) {
+      console.log('server', req.headers)
+      const user = getUserFromCookie(req)
+      //   console.log('b', getUserFromCookie(req))
+      if (!user) {
+        console.log('redirecting server')
+        redirect('/login')
+      }
+    } else {
+      var user = firebase.auth().currentUser
+      if (!user) {
+        redirect('/login')
+      }
+      //   console.log($nuxt.$router)
     }
   },
-  methods: {
-
+  created(){
+      firebase.auth().onAuthStateChanged(user=> {
+          this.loggedIn = !!user;
+          if(user){
+              this.loggedIn=true;
+          }
+          else{
+              this.loggedIn=false;
+          }
+      })
   }
 }
 </script>

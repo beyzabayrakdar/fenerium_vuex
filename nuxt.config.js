@@ -10,15 +10,15 @@ export default {
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-          {
-            rel: 'stylesheet',
-            href: 'https://fenerium.com/assets/fonts/fenerium-icons/fonts/fenerium-icons.ttf?3qa8cj'
-          },
-          {
-            rel: 'stylesheet',
-            href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css',
-            crossorigin: 'anonymous'
-          }
+            {
+                rel: 'stylesheet',
+                href: 'https://fenerium.com/assets/fonts/fenerium-icons/fonts/fenerium-icons.ttf?3qa8cj'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css',
+                crossorigin: 'anonymous'
+            }
         ]
     },
 
@@ -31,7 +31,8 @@ export default {
 
     // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
     plugins: [
-        { src: '~/plugins/vuex-persist', ssr: false }
+        { src: '~/plugins/vuex-persist', ssr: false },
+        '~/plugins/firebase.js'
     ],
 
     // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -41,7 +42,26 @@ export default {
     buildModules: [],
 
     // Modules (https://go.nuxtjs.dev/config-modules)
-    modules: [],
+    modules: [
+        [
+            '@nuxtjs/firebase',
+            {
+                config: {
+                    apiKey: "AIzaSyCsE5sPIYj20pPy_qaV_x0ybQcjeTOPDsI",
+                    authDomain: "fenerium-b65fc.firebaseapp.com",
+                    projectId: "fenerium-b65fc",
+                    storageBucket: "fenerium-b65fc.appspot.com",
+                    messagingSenderId: "450436459246",
+                    appId: "1:450436459246:web:c325b5c86853302d4361ff",
+                    measurementId: "G-Z96DXKBSFT"
+                },
+                services: {
+                    firestore: true,
+                    auth: true
+                }
+            }
+        ]
+    ],
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
     build: {}

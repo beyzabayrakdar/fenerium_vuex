@@ -8,9 +8,9 @@
     style="padding-right: 17px; display: block"
   >
     <div class="modal-dialog modal-dialog-scrollable" role="document">
-      <div class="modal-content">
+      <div href="/" class="modal-content">
         <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
-          <i class="icon icon-basket"></i>
+          <i class="fa fa-times" aria-hidden="true"></i>
         </button>
 
         <div class="tab-content">
@@ -27,7 +27,7 @@
               </div>
 
               <form
-                action="/account/login"
+                action="/"
                 class="primary-form login"
                 data-toggle="loginForm"
                 method="post"
@@ -47,6 +47,7 @@
                       data-msg-required="* Lütfen bu alanı doldurun."
                       data-msg-email="* Lütfen geçerli bir e-posta adresi girin."
                       placeholder="E-Posta"
+                      v-model="email"
                     />
                   </div>
                   <div class="form-group rendered">
@@ -56,6 +57,7 @@
                       name="password"
                       data-msg-required="* Lütfen bu alanı doldurun."
                       placeholder="Şifre"
+                      v-model="password"
                     />
                   </div>
                 </div>
@@ -114,32 +116,18 @@
                             sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
                           ></iframe>
                         </div>
-                        <textarea
-                          id="g-recaptcha-response"
-                          name="g-recaptcha-response"
-                          class="g-recaptcha-response"
-                          style="
-                            width: 250px;
-                            height: 40px;
-                            border: 1px solid rgb(193, 193, 193);
-                            margin: 10px 25px;
-                            padding: 0px;
-                            resize: none;
-                            display: none;
-                          "
-                        ></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn bg-cobalt text-white text-bold">
+                <button href="/" type="submit" class="btn bg-cobalt text-white text-bold">
                   OTURUM AÇ
                 </button>
               </form>
             </div>
             <div class="modal-footer">
               <nav class="nav">
-                <a href="#signUp" data-toggle="tab" class="modal-link"
+                <a href="/kaydol" data-toggle="tab" class="modal-link"
                   ><span>Henüz Üye Değil misin?</span> Şimdi Katıl</a
                 >
               </nav>
@@ -3951,20 +3939,6 @@
                               sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
                             ></iframe>
                           </div>
-                          <textarea
-                            id="g-recaptcha-response-2"
-                            name="g-recaptcha-response"
-                            class="g-recaptcha-response"
-                            style="
-                              width: 250px;
-                              height: 40px;
-                              border: 1px solid rgb(193, 193, 193);
-                              margin: 10px 25px;
-                              padding: 0px;
-                              resize: none;
-                              display: none;
-                            "
-                          ></textarea>
                         </div>
                       </div>
                     </div>
@@ -3988,3 +3962,31 @@
     </div>
   </div>
 </template>
+
+<script>
+import * as firebase from 'firebase/app'
+import 'firebase/auth'
+export default {
+  data() {
+    return {
+      email: '',
+      password: '',
+      error: ''
+    }
+  },
+  methods: {
+    pressed() {
+      firebase
+        .auth()
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then(data => {
+          console.log(data)
+          this.$router.replace({ name: '/' })
+        })
+        .catch(error => {
+          this.error = error
+        })
+    }
+  }
+}
+</script>

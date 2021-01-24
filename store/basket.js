@@ -13,15 +13,12 @@ export const mutations = {
     },
     decrease(state, index) {
         state.items[index].count--;
-    },
-  clearBasket(state){
-      state.items = [];
-  }
+    }
 };
 export const actions = {
     addBasket({ state, commit }, data) {
         for (let i = 0; i < state.items.length; i++) {
-            if (state.items[i].product.id === data.product.id && state.items[i].body === data.body) {
+            if (state.items[i].product.id === data.product.id && state.items[i].color === data.color) {
                 commit('increase', i);
                 return true;
             }
@@ -55,10 +52,7 @@ export const actions = {
                 return false;
             }
         }
-    },
-  clearBasket({commit}) {
-      commit('clearBasket');
-  }
+    }
 };
 export const getters = {
     getBasketItems(state) {

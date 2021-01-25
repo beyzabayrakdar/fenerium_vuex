@@ -999,7 +999,6 @@
 <script>
 import * as firebase from 'firebase'
 import 'firebase/auth'
-import { getUserFromCookie, getUserFromSession } from '@/helpers'
 export default {
     data(){
         return {
@@ -1009,9 +1008,6 @@ export default {
     computed: {
         basket(){
             return this.$store.getters["basket/getBasketItems"];
-            const id = this.$route.params.id;
-            this.$store.dispatch("product/initData");
-            this.$store.dispatch("product/setProduct", parseInt(id));
         },
         totalBasketItemCount() {
             let count = 0

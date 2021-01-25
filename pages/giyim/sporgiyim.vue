@@ -41,6 +41,7 @@
       window.Keyword = "";
       window.Favourites = [];
       window.Key = "3a237372-733c-4621-af90-4a905869310a";
+      window.filterTranslate = null;
     </script>
 
     <section class="primary-breadcrumb d-none d-lg-block">
@@ -95,7 +96,7 @@
                       class="btn btn-close"
                       data-toggle="filter-sidebar"
                     >
-                      <i class="fa fa-times" aria-hidden="true"></i>
+                      <i class="icon icon-close"></i>
                     </button>
                   </div>
                   <div class="accordion tertiary" id="accordionFilter">
@@ -142,8 +143,20 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">T-SHIRT</span></label
@@ -174,8 +187,20 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">KAPRİ</span></label
@@ -206,8 +231,20 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">YAĞMURLUK</span></label
@@ -238,8 +275,20 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">KABAN</span></label
@@ -270,8 +319,20 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">SWEATSHIRT</span></label
@@ -302,11 +363,111 @@
                                       padding: 0px;
                                       background: rgb(255, 255, 255);
                                       border: 0px;
-                                      opacity: 0;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">EŞOFMAN ALTI</span></label
+                              >
+                            </div>
+                            <div class="form-group">
+                              <label class="check-wrapper"
+                                ><div
+                                  class="icheckbox_tertiary"
+                                  style="position: relative"
+                                >
+                                  <input
+                                    class="tertiary-icheck rendered"
+                                    type="checkbox"
+                                    name="categoryFilter"
+                                    value="115"
+                                    style="position: absolute; opacity: 0"
+                                  /><ins
+                                    class="iCheck-helper"
+                                    style="
+                                      position: absolute;
+                                      top: 0%;
+                                      left: 0%;
+                                      display: block;
+                                      width: 100%;
+                                      height: 100%;
+                                      margin: 0px;
+                                      padding: 0px;
+                                      background: rgb(255, 255, 255);
+                                      border: 0px;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
+                                    "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
+                                  ></ins>
+                                </div>
+                                <span class="text">MONT</span></label
+                              >
+                            </div>
+                            <div class="form-group">
+                              <label class="check-wrapper"
+                                ><div
+                                  class="icheckbox_tertiary"
+                                  style="position: relative"
+                                >
+                                  <input
+                                    class="tertiary-icheck rendered"
+                                    type="checkbox"
+                                    name="categoryFilter"
+                                    value="138"
+                                    style="position: absolute; opacity: 0"
+                                  /><ins
+                                    class="iCheck-helper"
+                                    style="
+                                      position: absolute;
+                                      top: 0%;
+                                      left: 0%;
+                                      display: block;
+                                      width: 100%;
+                                      height: 100%;
+                                      margin: 0px;
+                                      padding: 0px;
+                                      background: rgb(255, 255, 255);
+                                      border: 0px;
+                                      opacity: 100;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
+                                    "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
+                                  ></ins>
+                                </div>
+                                <span class="text">RÜZGARLIK</span></label
                               >
                             </div>
                           </div>
@@ -322,7 +483,7 @@
                         aria-controls="collapseGenderFilter"
                         data-index="0"
                       >
-                        Cinsiyet<i class="fa fa-plus" aria-hidden="true"></i>
+                        Cinsiyet<i class="icon icon-plus"></i>
                       </h2>
                       <div
                         id="collapseGenderFilter"
@@ -360,7 +521,7 @@
                         aria-controls="collapsePriceFilter"
                         data-index="0"
                       >
-                        Fiyat<i class="fa fa-plus" aria-hidden="true"></i>
+                        Fiyat<i class="icon icon-plus"></i>
                       </h2>
                       <div
                         id="collapsePriceFilter"
@@ -424,7 +585,7 @@
                         aria-controls="collapseSizeFilter"
                         data-index="0"
                       >
-                        Beden<i class="fa fa-plus" aria-hidden="true"></i>
+                        Beden<i class="icon icon-plus"></i>
                       </h2>
                       <div
                         id="collapseSizeFilter"
@@ -492,7 +653,7 @@
                         aria-controls="collapseColorFilter"
                         data-index="0"
                       >
-                        Renk<i class="fa fa-plus" aria-hidden="true"></i>
+                        Renk<i class="icon icon-plus"></i>
                       </h2>
                       <div
                         id="collapseColorFilter"
@@ -509,7 +670,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -519,7 +684,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -529,7 +698,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(255, 237, 0)"
+                                style="
+                                  background-color: rgb(255, 237, 0);
+                                  --darkreader-inline-bgcolor: #ccbe00;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -539,7 +712,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(255, 255, 255)"
+                                style="
+                                  background-color: rgb(255, 255, 255);
+                                  --darkreader-inline-bgcolor: #181a1b;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -549,17 +726,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(0, 0, 0)"
-                              ></div></label
-                            ><label class="btn btn-filter"
-                              ><input
-                                type="checkbox"
-                                name="color"
-                                value="159e2d"
-                                class="rendered" />
-                              <div
-                                class="bg-color"
-                                style="background-color: rgb(21, 158, 45)"
+                                style="
+                                  background-color: rgb(0, 0, 0);
+                                  --darkreader-inline-bgcolor: #000000;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -569,7 +740,25 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(42, 157, 244)"
+                                style="
+                                  background-color: rgb(42, 157, 244);
+                                  --darkreader-inline-bgcolor: #0968b0;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div></label
+                            ><label class="btn btn-filter"
+                              ><input
+                                type="checkbox"
+                                name="color"
+                                value="159e2d"
+                                class="rendered" />
+                              <div
+                                class="bg-color"
+                                style="
+                                  background-color: rgb(21, 158, 45);
+                                  --darkreader-inline-bgcolor: #117e24;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -579,7 +768,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(246, 242, 230)"
+                                style="
+                                  background-color: rgb(246, 242, 230);
+                                  --darkreader-inline-bgcolor: #342c13;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -589,7 +782,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(216, 247, 129)"
+                                style="
+                                  background-color: rgb(216, 247, 129);
+                                  --darkreader-inline-bgcolor: #657c08;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div
                             ></label>
                           </div>
@@ -639,10 +836,10 @@
                             aria-haspopup="true"
                             aria-expanded="false"
                             tabindex="0"
-                            aria-labelledby="select2-sort-1x-container"
+                            aria-labelledby="select2-sort-37-container"
                             ><span
                               class="select2-selection__rendered"
-                              id="select2-sort-1x-container"
+                              id="select2-sort-37-container"
                               role="textbox"
                               aria-readonly="true"
                               title="Trendler"
@@ -661,812 +858,51 @@
                 </div>
                 <div class="product-card-list">
                   <div class="row">
-                    <div class="col-xl-6 col-md-8 col-12">
+                    <div v-for="(item, index) in products" :key="index"
+                      class="col-xl-6 col-md-8 col-12">
                       <a
-                        href="/urun-detay/1"
+                        :to="'/urun-detay/' + urun.id"
                         class="card-link"
                         ><div class="card product-card">
                           <div class="card-img">
                             <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050E9Y01301.jpg"
-                              alt="Erkek Gri Tribun Basic Eşofman Altı "
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050E9Y01301"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart">
-                              <div
-                                class="chart-item active"
-                                style="background-color: rgb(169, 169, 169)"
-                              ></div>
-                              <div
-                                class="chart-item"
-                                style="background-color: rgb(0, 65, 127)"
-                              ></div>
-                            </div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Gri Tribun Basic Eşofman Altı
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">149.95 TL</div>
-                              <div class="text type-fade d-none">149.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/urun-detay/2"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050E9S02301.jpg"
-                              alt="Erkek Gri Basket Eşofman Altı"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050E9S02301"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">Erkek Gri Basket Eşofman Altı</div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">139.95 TL</div>
-                              <div class="text type-fade">189.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/urun-detay/3"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAY01407.jpg"
-                              alt="Erkek Lacivert Aktif Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EAY01407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">Erkek Lacivert Aktif Tek Alt</div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">164.95 TL</div>
-                              <div class="text type-fade">219.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/urun-detay/4"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAY02407.jpg"
-                              alt="Erkek Lacivert Kolej Fenerbahçe 1907 Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EAY02407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Kolej Fenerbahçe 1907 Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">149.95 TL</div>
-                              <div class="text type-fade">199.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a href="/urundetay" class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAK08305.jpg"
-                              alt="Erkek Antrasit Tribün Nos Tek Alt"
+                              :src="item.image"
                               class="img-fluid"
                             /><button
                               class="btn btn-icon-link"
                               data-toggle="addToFavorite"
                               data-id="TK050EAK08305"
                             >
-                              <i class="icon fas fa-heart"></i>
+                              <i class="icon icon-heart-outline"></i>
                             </button>
                             <div class="color-chart">
                               <div
                                 class="chart-item active"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                               <div
                                 class="chart-item"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                             </div>
                           </div>
                           <div class="card-content">
                             <div class="text-wrapper">
                               <div class="card-title">
-                                Erkek Antrasit Tribün Nos Tek Alt
+                                {{ item.title }}
                               </div>
                             </div>
                             <div class="text-wrapper price">
                               <div class="text">149.95 TL</div>
-                              <div class="text type-fade d-none">149.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-kamuflaj-esofman-alti-p-TK050EAK05407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAK05407.jpg"
-                              alt="Erkek Lacivert Tribün Kamuflaj Eşofman Altı"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EAK05407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Tribün Kamuflaj Eşofman Altı
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">114.95 TL</div>
-                              <div class="text type-fade">189.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-nos-esofman-alti-p-TK050EAK08407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAK08407.jpg"
-                              alt="Erkek Lacivert Tribün Nos Eşofman Altı"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EAK08407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart">
-                              <div
-                                class="chart-item active"
-                                style="background-color: rgb(0, 65, 127)"
-                              ></div>
-                              <div
-                                class="chart-item"
-                                style="background-color: rgb(169, 169, 169)"
-                              ></div>
-                            </div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Tribün Nos Eşofman Altı
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">149.95 TL</div>
-                              <div class="text type-fade d-none">149.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-aktif-neon-logo-tek-alt-p-TK050EBK05407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EBK05407.jpg"
-                              alt="Erkek Lacivert Aktif Neon Logo Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EBK05407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Aktif Neon Logo Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">229.95 TL</div>
-                              <div class="text type-fade d-none">229.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-ribanali-basic-tek-alt-p-TK050EBK01407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EBK01407.jpg"
-                              alt="Erkek Lacivert Basic Ribanalı Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EBK01407"
-                            >
-                             <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Basic Ribanalı Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.95 TL</div>
-                              <div class="text type-fade d-none">169.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-gri-tribun-yan-parcali-tek-alt-p-TK050EBK02301"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EBK02301.jpg"
-                              alt="Erkek Gri Tribün Yan Parçalı Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EBK02301"
-                            >
-                             <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Gri Tribün Yan Parçalı Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">179.95 TL</div>
-                              <div class="text type-fade d-none">179.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-beyaz-2020-21-a-takim-kamp-tek-alt-p-AT050EAS014BZ"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT050EAS014BZ.jpg"
-                              alt="Erkek Lacivert Beyaz 2020/21 A Takım Kamp Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT050EAS014BZ"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Beyaz 2020/21 A Takım Kamp Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">279.00 TL</div>
-                              <div class="text type-fade d-none">279.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-beyaz-2020-21-a-takim-antrenman-tek-alt-p-AT050EAS024BZ"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT050EAS024BZ.jpg"
-                              alt="Erkek 2020/21 A Takım Antrenman Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT050EAS024BZ"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek 2020/21 A Takım Antrenman Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">339.00 TL</div>
-                              <div class="text type-fade d-none">339.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-kaban-p-TK016EBK01407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK016EBK01407.jpg"
-                              alt="Erkek Lacivert Tribün Kaban"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK016EBK01407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">Erkek Lacivert Tribün Kaban</div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">599.00 TL</div>
-                              <div class="text type-fade d-none">599.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-beyaz-2020-21-a-takim-kapri-p-AT012EAS014BZ"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT012EAS014BZ.jpg"
-                              alt="Erkek Lacivert Beyaz 2020/21 A Takım Kapri"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT012EAS014BZ"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Beyaz 2020/21 A Takım Kapri
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">249.00 TL</div>
-                              <div class="text type-fade d-none">249.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-basic-kapri-p-TK012E9Y02407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK012E9Y02407.jpg"
-                              alt="Erkek Lacivert Tribün Basic Kapri "
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK012E9Y02407"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Tribün Basic Kapri
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">94.95 TL</div>
-                              <div class="text type-fade">129.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-sari-fenerbahce-19-mac-sort-p-AT514E9S035LC"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514E9S035LC.jpg"
-                              alt="Erkek Sarı Fenerbahçe 19 Maç Şort "
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514E9S035LC"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Sarı Fenerbahçe 19 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">89.00 TL</div>
-                              <div class="text type-fade">149.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-fenerbahce-voleybol-mac-sort-p-AT514E9S06400"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514E9S06400.jpg"
-                              alt="Erkek Lacivert Fenerbahçe Voleybol Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514E9S06400"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Fenerbahçe Voleybol Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">129.00 TL</div>
-                              <div class="text type-fade d-none">129.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-beyaz-fenerbahce-voleybol-mac-sort-p-AT514E9S07001"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514E9S07001.jpg"
-                              alt="Erkek Beyaz Fenerbahçe Voleybol Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514E9S07001"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Beyaz Fenerbahçe Voleybol Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">129.00 TL</div>
-                              <div class="text type-fade d-none">129.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-sari-fenerbahce-2020-21-mac-sort-p- AT514EAS014SR"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS014SR-03.jpg"
-                              alt="Erkek Lacivert Sarı Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS014SR"
-                            >
-                             <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Sarı Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-beyaz-lacivert-fenerbahce-2020-21-mac-sort-p-AT514EAS020LS"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS020LS.jpg"
-                              alt="Erkek Beyaz Lacivert Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS020LS"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Beyaz Lacivert Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-gold-fenerbahce-2020-21-mac-sort-p-AT514EAS044GD"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS044GD.jpg"
-                              alt="Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS044GD"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-gold-fenerbahce-2020-21-mac-sort-p-AT514EAS03506"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS03506.jpg"
-                              alt="Erkek Gold Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS03506"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Gold Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-gold-fenerbahce-2020-21-mac-sort-p-AT514EAS054GD"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS054GD.jpg"
-                              alt="Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS054GD"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-beyaz-2020-21-a-takim-kamp-sort-p-AT014EAS014BZ"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT014EAS014BZ.jpg"
-                              alt="Erkek Lacivert Beyaz 2020/21 A Takım Kamp Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT014EAS014BZ"
-                            >
-                              <i class="icon fas fa-heart"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Beyaz 2020/21 A Takım Kamp Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">249.00 TL</div>
-                              <div class="text type-fade d-none">249.00 TL</div>
+                              <div class="text type-fade d-none">{{ item.price }} TL</div>
                             </div>
                           </div>
                         </div></a
@@ -1481,10 +917,10 @@
                     <span class="current-count">Toplam <span class="count">24</span></span
                     ><span class="text">/</span
                     ><span class="total-count"
-                      ><span class="count">174</span> İçerik</span
+                      ><span class="count">197</span> İçerik</span
                     >
                     <div class="counter-bar">
-                      <span class="bar" style="width: 13.7931%"></span>
+                      <span class="bar" style="width: 12.1827%"></span>
                     </div>
                   </div>
                   <button
@@ -1512,3 +948,29 @@
     ></script>
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      urunler: [],
+      
+    };
+  },
+  computed: {
+    products(){
+      return this.$store.getters["product/getProducts"];
+    }
+  },
+  methods: {
+    addBasket(item){
+      const payload = {
+        id: Math.random() * 1000,
+        count: 1,
+        product: item
+      };
+      this.$store.dispatch("basket/addBasket", payload);
+    }
+  },
+};
+</script>

@@ -9,14 +9,6 @@
                 </div>
             </div>
             <div class="product-slider owl-carousel owl-loaded owl-drag">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
             <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1420px, 0px, 0px); transition: all 0s ease 0s; width: 5680px;"><div class="owl-item cloned" style="width: 335px; margin-right: 20px;"><div class="item">
                         <a href="/kadin-lacivert-gri--tribun-sari-biyeli-logo-sweatshirt-p-TK017BBK083LC" class="card-link" data-layer-product="{&quot;actionField&quot;:&quot;Choices for you&quot;,&quot;product&quot;:[{&quot;id&quot;:&quot;TK017BBK083LC&quot;,&quot;name&quot;:&quot;KADIN TRIBUN SARI BİYELİ LOGO SWEAT&quot;,&quot;category&quot;:&quot;SWEATSHIRT, FENERBAHÇELİ KADINLARIN GÜNLÜK TARZI, 2021 SONBAHAR/KIŞ&quot;,&quot;brand&quot;:&quot;FENERIUM&quot;,&quot;list&quot;:&quot;Choices for you&quot;,&quot;position&quot;:5}]}">
                             <div class="card product-card type-lg">

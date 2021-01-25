@@ -41,6 +41,7 @@
       window.Keyword = "";
       window.Favourites = [];
       window.Key = "3a237372-733c-4621-af90-4a905869310a";
+      window.filterTranslate = null;
     </script>
 
     <section class="primary-breadcrumb d-none d-lg-block">
@@ -118,8 +119,8 @@
                         <div class="card-body">
                           <div class="category-filter-wrapper">
                             <div class="form-group">
-                              <label class="check-wrapper">
-                                <div
+                              <label class="check-wrapper"
+                                ><div
                                   class="icheckbox_tertiary"
                                   style="position: relative"
                                 >
@@ -129,8 +130,7 @@
                                     name="categoryFilter"
                                     value="010"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -144,15 +144,27 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">T-SHIRT</span></label
                               >
                             </div>
                             <div class="form-group">
-                              <label class="check-wrapper">
-                                <div
+                              <label class="check-wrapper"
+                                ><div
                                   class="icheckbox_tertiary"
                                   style="position: relative"
                                 >
@@ -162,8 +174,7 @@
                                     name="categoryFilter"
                                     value="012"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -177,7 +188,19 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">KAPRİ</span></label
@@ -195,8 +218,7 @@
                                     name="categoryFilter"
                                     value="015"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -210,15 +232,27 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">YAĞMURLUK</span></label
                               >
                             </div>
                             <div class="form-group">
-                              <label class="check-wrapper">
-                                <div
+                              <label class="check-wrapper"
+                                ><div
                                   class="icheckbox_tertiary"
                                   style="position: relative"
                                 >
@@ -228,8 +262,7 @@
                                     name="categoryFilter"
                                     value="016"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -243,7 +276,19 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">KABAN</span></label
@@ -261,8 +306,7 @@
                                     name="categoryFilter"
                                     value="017"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -276,7 +320,19 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">SWEATSHIRT</span></label
@@ -294,8 +350,7 @@
                                     name="categoryFilter"
                                     value="050"
                                     style="position: absolute; opacity: 0"
-                                  />
-                                  <ins
+                                  /><ins
                                     class="iCheck-helper"
                                     style="
                                       position: absolute;
@@ -309,10 +364,110 @@
                                       background: rgb(255, 255, 255);
                                       border: 0px;
                                       opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
                                     "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
                                   ></ins>
                                 </div>
                                 <span class="text">EŞOFMAN ALTI</span></label
+                              >
+                            </div>
+                            <div class="form-group">
+                              <label class="check-wrapper"
+                                ><div
+                                  class="icheckbox_tertiary"
+                                  style="position: relative"
+                                >
+                                  <input
+                                    class="tertiary-icheck rendered"
+                                    type="checkbox"
+                                    name="categoryFilter"
+                                    value="115"
+                                    style="position: absolute; opacity: 0"
+                                  /><ins
+                                    class="iCheck-helper"
+                                    style="
+                                      position: absolute;
+                                      top: 0%;
+                                      left: 0%;
+                                      display: block;
+                                      width: 100%;
+                                      height: 100%;
+                                      margin: 0px;
+                                      padding: 0px;
+                                      background: rgb(255, 255, 255);
+                                      border: 0px;
+                                      opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
+                                    "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
+                                  ></ins>
+                                </div>
+                                <span class="text">MONT</span></label
+                              >
+                            </div>
+                            <div class="form-group">
+                              <label class="check-wrapper"
+                                ><div
+                                  class="icheckbox_tertiary"
+                                  style="position: relative"
+                                >
+                                  <input
+                                    class="tertiary-icheck rendered"
+                                    type="checkbox"
+                                    name="categoryFilter"
+                                    value="138"
+                                    style="position: absolute; opacity: 0"
+                                  /><ins
+                                    class="iCheck-helper"
+                                    style="
+                                      position: absolute;
+                                      top: 0%;
+                                      left: 0%;
+                                      display: block;
+                                      width: 100%;
+                                      height: 100%;
+                                      margin: 0px;
+                                      padding: 0px;
+                                      background: rgb(255, 255, 255);
+                                      border: 0px;
+                                      opacity: 0;
+                                      --darkreader-inline-bgimage: initial;
+                                      --darkreader-inline-bgcolor: #181a1b;
+                                      --darkreader-inline-border-top: initial;
+                                      --darkreader-inline-border-right: initial;
+                                      --darkreader-inline-border-bottom: initial;
+                                      --darkreader-inline-border-left: initial;
+                                    "
+                                    data-darkreader-inline-bgimage=""
+                                    data-darkreader-inline-bgcolor=""
+                                    data-darkreader-inline-border-top=""
+                                    data-darkreader-inline-border-right=""
+                                    data-darkreader-inline-border-bottom=""
+                                    data-darkreader-inline-border-left=""
+                                  ></ins>
+                                </div>
+                                <span class="text">RÜZGARLIK</span></label
                               >
                             </div>
                           </div>
@@ -328,7 +483,7 @@
                         aria-controls="collapseGenderFilter"
                         data-index="0"
                       >
-                        Cinsiyet <i class="icon icon-plus"></i>
+                        Cinsiyet<i class="icon icon-plus"></i>
                       </h2>
                       <div
                         id="collapseGenderFilter"
@@ -337,19 +492,21 @@
                       >
                         <div class="card-body">
                           <div class="btn-group-toggle">
-                            <label class="btn btn-filter type2 block active">
-                              <input type="checkbox" name="gender" value="E" />
-                              <span class="text">Erkek</span></label
-                            >
-                            <label class="btn btn-filter type2 block">
-                              <input type="checkbox" name="gender" value="K" /><span
+                            <label class="btn btn-filter type2 block active"
+                              ><input type="checkbox" name="gender" value="E" /><span
+                                class="text"
+                                >Erkek</span
+                              ></label
+                            ><label class="btn btn-filter type2 block"
+                              ><input type="checkbox" name="gender" value="K" /><span
                                 class="text"
                                 >Kadın</span
                               ></label
-                            >
-                            <label class="btn btn-filter type2 block"
-                              ><input type="checkbox" name="gender" value="C" />
-                              <span class="text">Çocuk</span></label
+                            ><label class="btn btn-filter type2 block"
+                              ><input type="checkbox" name="gender" value="C" /><span
+                                class="text"
+                                >Çocuk</span
+                              ></label
                             >
                           </div>
                         </div>
@@ -513,7 +670,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -523,7 +684,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -533,7 +698,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(255, 237, 0)"
+                                style="
+                                  background-color: rgb(255, 237, 0);
+                                  --darkreader-inline-bgcolor: #ccbe00;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -543,7 +712,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(255, 255, 255)"
+                                style="
+                                  background-color: rgb(255, 255, 255);
+                                  --darkreader-inline-bgcolor: #181a1b;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -553,17 +726,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(0, 0, 0)"
-                              ></div></label
-                            ><label class="btn btn-filter"
-                              ><input
-                                type="checkbox"
-                                name="color"
-                                value="159e2d"
-                                class="rendered" />
-                              <div
-                                class="bg-color"
-                                style="background-color: rgb(21, 158, 45)"
+                                style="
+                                  background-color: rgb(0, 0, 0);
+                                  --darkreader-inline-bgcolor: #000000;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -573,7 +740,25 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(42, 157, 244)"
+                                style="
+                                  background-color: rgb(42, 157, 244);
+                                  --darkreader-inline-bgcolor: #0968b0;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div></label
+                            ><label class="btn btn-filter"
+                              ><input
+                                type="checkbox"
+                                name="color"
+                                value="159e2d"
+                                class="rendered" />
+                              <div
+                                class="bg-color"
+                                style="
+                                  background-color: rgb(21, 158, 45);
+                                  --darkreader-inline-bgcolor: #117e24;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -583,7 +768,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(246, 242, 230)"
+                                style="
+                                  background-color: rgb(246, 242, 230);
+                                  --darkreader-inline-bgcolor: #342c13;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div></label
                             ><label class="btn btn-filter"
                               ><input
@@ -593,7 +782,11 @@
                                 class="rendered" />
                               <div
                                 class="bg-color"
-                                style="background-color: rgb(216, 247, 129)"
+                                style="
+                                  background-color: rgb(216, 247, 129);
+                                  --darkreader-inline-bgcolor: #657c08;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div
                             ></label>
                           </div>
@@ -643,10 +836,10 @@
                             aria-haspopup="true"
                             aria-expanded="false"
                             tabindex="0"
-                            aria-labelledby="select2-sort-1x-container"
+                            aria-labelledby="select2-sort-37-container"
                             ><span
                               class="select2-selection__rendered"
-                              id="select2-sort-1x-container"
+                              id="select2-sort-37-container"
                               role="textbox"
                               aria-readonly="true"
                               title="Trendler"
@@ -667,7 +860,7 @@
                   <div class="row">
                     <div class="col-xl-6 col-md-8 col-12">
                       <a
-                        href="/giyim/"
+                        href="/erkek-gri-tribun-basic-esofman-alti-p-TK050E9Y01301"
                         class="card-link"
                         ><div class="card product-card">
                           <div class="card-img">
@@ -685,11 +878,19 @@
                             <div class="color-chart">
                               <div
                                 class="chart-item active"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                               <div
                                 class="chart-item"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                             </div>
                           </div>
@@ -697,6 +898,56 @@
                             <div class="text-wrapper">
                               <div class="card-title">
                                 Erkek Gri Tribun Basic Eşofman Altı
+                              </div>
+                            </div>
+                            <div class="text-wrapper price">
+                              <div class="text">149.95 TL</div>
+                              <div class="text type-fade d-none">149.95 TL</div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-xl-6 col-md-8 col-12">
+                      <a
+                        href="/erkek-lacivert-tribun-basic-esofman-alti-p-TK050E9Y01407"
+                        class="card-link"
+                        ><div class="card product-card">
+                          <div class="card-img">
+                            <img
+                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050E9Y01407.jpg"
+                              alt="Erkek Lacivert Tribun Basic Eşofman Altı "
+                              class="img-fluid"
+                            /><button
+                              class="btn btn-icon-link"
+                              data-toggle="addToFavorite"
+                              data-id="TK050E9Y01407"
+                            >
+                              <i class="icon icon-heart-outline"></i>
+                            </button>
+                            <div class="color-chart">
+                              <div
+                                class="chart-item active"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div>
+                              <div
+                                class="chart-item"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="card-content">
+                            <div class="text-wrapper">
+                              <div class="card-title">
+                                Erkek Lacivert Tribun Basic Eşofman Altı
                               </div>
                             </div>
                             <div class="text-wrapper price">
@@ -733,6 +984,56 @@
                             <div class="text-wrapper price">
                               <div class="text">139.95 TL</div>
                               <div class="text type-fade">189.95 TL</div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-xl-6 col-md-8 col-12">
+                      <a
+                        href="/erkek-gri-tribun-basic-esofman-alti-p-TK050E9K01305"
+                        class="card-link"
+                        ><div class="card product-card">
+                          <div class="card-img">
+                            <img
+                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050E9K01305.jpg"
+                              alt="Erkek Gri Tribün Basic Eşofman Altı "
+                              class="img-fluid"
+                            /><button
+                              class="btn btn-icon-link"
+                              data-toggle="addToFavorite"
+                              data-id="TK050E9K01305"
+                            >
+                              <i class="icon icon-heart-outline"></i>
+                            </button>
+                            <div class="color-chart">
+                              <div
+                                class="chart-item active"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div>
+                              <div
+                                class="chart-item"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
+                              ></div>
+                            </div>
+                          </div>
+                          <div class="card-content">
+                            <div class="text-wrapper">
+                              <div class="card-title">
+                                Erkek Gri Tribün Basic Eşofman Altı
+                              </div>
+                            </div>
+                            <div class="text-wrapper price">
+                              <div class="text">149.95 TL</div>
+                              <div class="text type-fade d-none">149.95 TL</div>
                             </div>
                           </div>
                         </div></a
@@ -803,15 +1104,16 @@
                       >
                     </div>
                     <div class="col-xl-6 col-md-8 col-12">
-                      <a href="/urundetay" class="card-link">
-                        <div class="card product-card">
+                      <a
+                        href="/erkek-antrasit-tribun-nos-tek-alt-p-TK050EAK08305"
+                        class="card-link"
+                        ><div class="card product-card">
                           <div class="card-img">
                             <img
                               src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAK08305.jpg"
                               alt="Erkek Antrasit Tribün Nos Tek Alt"
                               class="img-fluid"
-                            />
-                            <button
+                            /><button
                               class="btn btn-icon-link"
                               data-toggle="addToFavorite"
                               data-id="TK050EAK08305"
@@ -821,11 +1123,19 @@
                             <div class="color-chart">
                               <div
                                 class="chart-item active"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                               <div
                                 class="chart-item"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                             </div>
                           </div>
@@ -838,39 +1148,6 @@
                             <div class="text-wrapper price">
                               <div class="text">149.95 TL</div>
                               <div class="text type-fade d-none">149.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-tribun-kamuflaj-esofman-alti-p-TK050EAK05407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EAK05407.jpg"
-                              alt="Erkek Lacivert Tribün Kamuflaj Eşofman Altı"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EAK05407"
-                            >
-                              <i class="icon icon-heart-outline"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Tribün Kamuflaj Eşofman Altı
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">114.95 TL</div>
-                              <div class="text type-fade">189.95 TL</div>
                             </div>
                           </div>
                         </div></a
@@ -896,11 +1173,19 @@
                             <div class="color-chart">
                               <div
                                 class="chart-item active"
-                                style="background-color: rgb(0, 65, 127)"
+                                style="
+                                  background-color: rgb(0, 65, 127);
+                                  --darkreader-inline-bgcolor: #003466;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                               <div
                                 class="chart-item"
-                                style="background-color: rgb(169, 169, 169)"
+                                style="
+                                  background-color: rgb(169, 169, 169);
+                                  --darkreader-inline-bgcolor: #494f52;
+                                "
+                                data-darkreader-inline-bgcolor=""
                               ></div>
                             </div>
                           </div>
@@ -913,39 +1198,6 @@
                             <div class="text-wrapper price">
                               <div class="text">149.95 TL</div>
                               <div class="text type-fade d-none">149.95 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-aktif-neon-logo-tek-alt-p-TK050EBK05407"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EBK05407.jpg"
-                              alt="Erkek Lacivert Aktif Neon Logo Tek Alt"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="TK050EBK05407"
-                            >
-                              <i class="icon icon-heart-outline"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Aktif Neon Logo Tek Alt
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">229.95 TL</div>
-                              <div class="text type-fade d-none">229.95 TL</div>
                             </div>
                           </div>
                         </div></a
@@ -1012,6 +1264,39 @@
                             <div class="text-wrapper price">
                               <div class="text">179.95 TL</div>
                               <div class="text type-fade d-none">179.95 TL</div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-xl-6 col-md-8 col-12">
+                      <a
+                        href="/erkek-lacivert-aktif-neon-logo-tek-alt-p-TK050EBK05407"
+                        class="card-link"
+                        ><div class="card product-card">
+                          <div class="card-img">
+                            <img
+                              src="https://fenerium.com/Fenerium/media/images/urunler/TK050EBK05407.jpg"
+                              alt="Erkek Lacivert Aktif Neon Logo Tek Alt"
+                              class="img-fluid"
+                            /><button
+                              class="btn btn-icon-link"
+                              data-toggle="addToFavorite"
+                              data-id="TK050EBK05407"
+                            >
+                              <i class="icon icon-heart-outline"></i>
+                            </button>
+                            <div class="color-chart"></div>
+                          </div>
+                          <div class="card-content">
+                            <div class="text-wrapper">
+                              <div class="card-title">
+                                Erkek Lacivert Aktif Neon Logo Tek Alt
+                              </div>
+                            </div>
+                            <div class="text-wrapper price">
+                              <div class="text">229.95 TL</div>
+                              <div class="text type-fade d-none">229.95 TL</div>
                             </div>
                           </div>
                         </div></a
@@ -1182,6 +1467,39 @@
                     </div>
                     <div class="col-xl-6 col-md-8 col-12">
                       <a
+                        href="/erkek-lacivert-fenerbahce-19-mac-sort-p-AT514E9S014SR"
+                        class="card-link"
+                        ><div class="card product-card">
+                          <div class="card-img">
+                            <img
+                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514E9S014SR.jpg"
+                              alt="Erkek Lacivert Fenerbahçe 19 Maç Şort "
+                              class="img-fluid"
+                            /><button
+                              class="btn btn-icon-link"
+                              data-toggle="addToFavorite"
+                              data-id="AT514E9S014SR"
+                            >
+                              <i class="icon icon-heart-outline"></i>
+                            </button>
+                            <div class="color-chart"></div>
+                          </div>
+                          <div class="card-content">
+                            <div class="text-wrapper">
+                              <div class="card-title">
+                                Erkek Lacivert Fenerbahçe 19 Maç Şort
+                              </div>
+                            </div>
+                            <div class="text-wrapper price">
+                              <div class="text">89.00 TL</div>
+                              <div class="text type-fade">149.00 TL</div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-xl-6 col-md-8 col-12">
+                      <a
                         href="/erkek-sari-fenerbahce-19-mac-sort-p-AT514E9S035LC"
                         class="card-link"
                         ><div class="card product-card">
@@ -1203,6 +1521,39 @@
                             <div class="text-wrapper">
                               <div class="card-title">
                                 Erkek Sarı Fenerbahçe 19 Maç Şort
+                              </div>
+                            </div>
+                            <div class="text-wrapper price">
+                              <div class="text">89.00 TL</div>
+                              <div class="text type-fade">149.00 TL</div>
+                            </div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div class="col-xl-6 col-md-8 col-12">
+                      <a
+                        href="/erkek-beyaz-fenerbahce-19-mac-sort-p-AT514E9S020LS"
+                        class="card-link"
+                        ><div class="card product-card">
+                          <div class="card-img">
+                            <img
+                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514E9S020LS.jpg"
+                              alt="Erkek Beyaz Fenerbahçe 19 Maç Şort "
+                              class="img-fluid"
+                            /><button
+                              class="btn btn-icon-link"
+                              data-toggle="addToFavorite"
+                              data-id="AT514E9S020LS"
+                            >
+                              <i class="icon icon-heart-outline"></i>
+                            </button>
+                            <div class="color-chart"></div>
+                          </div>
+                          <div class="card-content">
+                            <div class="text-wrapper">
+                              <div class="card-title">
+                                Erkek Beyaz Fenerbahçe 19 Maç Şort
                               </div>
                             </div>
                             <div class="text-wrapper price">
@@ -1378,105 +1729,6 @@
                         </div></a
                       >
                     </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-gold-fenerbahce-2020-21-mac-sort-p-AT514EAS03506"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS03506.jpg"
-                              alt="Erkek Gold Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS03506"
-                            >
-                              <i class="icon icon-heart-outline"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Gold Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-gold-fenerbahce-2020-21-mac-sort-p-AT514EAS054GD"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT514EAS054GD.jpg"
-                              alt="Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT514EAS054GD"
-                            >
-                              <i class="icon icon-heart-outline"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Gold Fenerbahçe 2020/21 Maç Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">169.00 TL</div>
-                              <div class="text type-fade d-none">169.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
-                    <div class="col-xl-6 col-md-8 col-12">
-                      <a
-                        href="/erkek-lacivert-beyaz-2020-21-a-takim-kamp-sort-p-AT014EAS014BZ"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              src="https://fenerium.com/Fenerium/media/images/urunler/AT014EAS014BZ.jpg"
-                              alt="Erkek Lacivert Beyaz 2020/21 A Takım Kamp Şort"
-                              class="img-fluid"
-                            /><button
-                              class="btn btn-icon-link"
-                              data-toggle="addToFavorite"
-                              data-id="AT014EAS014BZ"
-                            >
-                              <i class="icon icon-heart-outline"></i>
-                            </button>
-                            <div class="color-chart"></div>
-                          </div>
-                          <div class="card-content">
-                            <div class="text-wrapper">
-                              <div class="card-title">
-                                Erkek Lacivert Beyaz 2020/21 A Takım Kamp Şort
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">249.00 TL</div>
-                              <div class="text type-fade d-none">249.00 TL</div>
-                            </div>
-                          </div>
-                        </div></a
-                      >
-                    </div>
                   </div>
                 </div>
               </section>
@@ -1486,10 +1738,10 @@
                     <span class="current-count">Toplam <span class="count">24</span></span
                     ><span class="text">/</span
                     ><span class="total-count"
-                      ><span class="count">174</span> İçerik</span
+                      ><span class="count">197</span> İçerik</span
                     >
                     <div class="counter-bar">
-                      <span class="bar" style="width: 13.7931%"></span>
+                      <span class="bar" style="width: 12.1827%"></span>
                     </div>
                   </div>
                   <button

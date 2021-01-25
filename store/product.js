@@ -1,27 +1,19 @@
 export const state = () => ({
-    isInitialized: false,
+    isInitialized: true,
     products: [],
     product: null
 });
 export const mutations = {
-    setProducts(state, param) {
-        state.products = param;
-    },
-    setProduct(state, product) {
-        state.product = product;
+    setProducts(state, item) {
+        state.products = item;
     }
 };
 export const actions = {
     initData({ state, commit }, ) {
-
-        this.$fire.firestore.collection('fenerium').get().then(snapshot => {
-            let tempItems = [];
-            snapshot.forEach(data => {
-                tempItems.push(data.data());
-            });
-            commit("setProducts", tempItems);
-
-        });
+        if (state.isInitialized === false) {
+            commit("setProducts", data);
+            state.isInitialized = true;
+        }
     },
     setProduct({ state, commit }, id) {
         for (let i = 0; i < state.products.length; i++) {
@@ -29,6 +21,18 @@ export const actions = {
                 commit("setProduct", state.products[i]);
             }
         }
+    },
+    getProductDetail({ commit }, product_id) {
+        this.$fire.firestore.collection('products').get().then(snapshot => {
+            let selected = null;
+            snapshot.forEach(data => {
+                if (data.data().id === product_id) {
+                    selected = data.data();
+                    return false;
+                }
+            });
+            commit('setProduct', selected);
+        });
     }
 };
 export const getters = {

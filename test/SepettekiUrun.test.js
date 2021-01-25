@@ -1,5 +1,5 @@
 import { mount, createLocalVue, config, shallowMount } from "@vue/test-utils";
-import SepettekiUrun from "../pages/SepettekiUrun.vue";
+import sepettekiurun from "../pages/sepettekiurun.vue";
 import { getters, mutations, actions, state } from "../store/basket";
 
 config.mocks["$store"] = {
@@ -15,9 +15,9 @@ config.mocks["$store"] = {
     }
 };
 
-describe("SepettekiUrun.vue", () => {
+describe("sepettekiurun.vue", () => {
     it("Render", () => {
-        let wrapper = shallowMount(SepettekiUrun);
-        expect(wrapper.text()).toContain("Sepet Listesi");
+        let wrapper = shallowMount(sepettekiurun);
+        expect(wrapper.text()).toContain("Sipariş Özeti");
     });
 });

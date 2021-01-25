@@ -18,5 +18,7 @@ module.exports = {
     },
     transformIgnorePatterns: ["/node_modules/.*"],
     snapshotSerializers: ["jest-serializer-vue"],
+    preset: '@vue/cli-plugin-unit-jest'
+
 
 };

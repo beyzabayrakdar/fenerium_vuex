@@ -19,14 +19,26 @@ config.mocks["$store"] = {
 
 describe("Login Tests", () => {
     const wrapper = mount(Login);
-    it("Successfull Login", () => {
-        let loginButton = wrapper.find("button.btn-success");
-        loginButton.trigger("click").then(() => {
-            expect(wrapper.text()).toContain("Giriş Başarılı");
-        });
+    it("There is a 'Üye Girişi'", () => {
+        expect(wrapper.text()).toContain("Üye Girişi");
     });
-    it("There is a button of 'Şifremi Unuttum'", () => {
-        expect(wrapper.text()).toContain("Şifremi Unuttum");
+    it("There is a 'Fenerbahçe’ye'", () => {
+        expect(wrapper.text()).toContain("Fenerbahçe’ye");
+    });
+    it("There is a 'Dair'", () => {
+        expect(wrapper.text()).toContain("Dair");
+    });
+    it("There is a 'Beni Hatırla'", () => {
+        expect(wrapper.text()).toContain("Beni Hatırla");
+    });
+    it("There is a 'Üye Girişi'", () => {
+        expect(wrapper.text()).toContain("Üye Girişi");
+    });
+    it("There is a button of 'Şifreni mi unuttun?'", () => {
+        expect(wrapper.text()).toContain("Şifreni mi unuttun?");
+    });
+    it("There is a button of 'OTURUM AÇ'", () => {
+        expect(wrapper.text()).toContain("OTURUM AÇ");
     });
     it("There is a button of 'Henüz Üye Değil misin? Şimdi Katıl'", () => {
         expect(wrapper.text()).toContain("Henüz Üye Değil misin? Şimdi Katıl");

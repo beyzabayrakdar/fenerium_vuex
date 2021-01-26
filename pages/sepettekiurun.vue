@@ -48,7 +48,7 @@
                           <div class="content">
                             <div class="product-title">
                               <nuxt-link :to="'/urun-detay/' + item.product.id" class="name">
-                                {{ item.product.title }} ( {{ item.body }} )
+                                {{ "item.product.title" }} ( {{ item.body }} )
                               </nuxt-link>
                             </div>
                             <div class="product-code d-none d-md-block">

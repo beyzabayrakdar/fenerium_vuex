@@ -7,62 +7,53 @@
 </template>
 
 <script>
-import HeaderMenu from "@/components/HeaderMenu"
-import Footer from "@/components/Footer"
-
-import Cookies from 'js-cookie'
+import HeaderMenu from "@/components/HeaderMenu";
+import Footer from "@/components/Footer";
+import firebase from "firebase";
+import Cookies from "js-cookie";
 
 export default {
-  components:{
+  components: {
     HeaderMenu,
-    Footer
+    Footer,
   },
   data() {
     return {
       loggedIn: false,
-    }
+    };
   },
   mounted() {
-    this.setupFirebase()
+    this.setupFirebase();
   },
   asyncData() {},
   methods: {
     setupFirebase() {
-       this.$fire.auth.onAuthStateChanged(user => {
+      firebase.auth().onAuthStateChanged((user) => {
         if (user) {
           // User is signed in.
-          console.log('signed in')
-          this.$fire
-            .auth
-            .currentUser.getIdToken(true)
-            .then(token => Cookies.set('access_token', token))
-          this.loggedIn = true
+          console.log("signed in");
+          this.$fire.auth.currentUser
+            .getIdToken(true)
+            .then((token) => Cookies.set("access_token", token));
+          this.loggedIn = true;
         } else {
-          Cookies.remove('access_token')
+          Cookies.remove("access_token");
           // if (Cookies.set('access_token', 'blah')) {
           // }
           // No user is signed in.
-          this.loggedIn = false
-          console.log('signed out', this.loggedIn)
+          this.loggedIn = false;
+          console.log("signed out", this.loggedIn);
         }
-      })
+      });
     },
-  }
-
-}
+  },
+};
 </script>
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

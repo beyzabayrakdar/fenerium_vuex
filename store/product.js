@@ -1,5 +1,5 @@
-const data = require("@/data/products.json");
-
+import { realDb, auth } from '../plugins/firebase.js';
+import firebase from "firebase";
 export const state = () => ({
     isInitialized: false,
     products: [],
@@ -15,10 +15,14 @@ export const mutations = {
 };
 export const actions = {
     initData({ state, commit }, ) {
-        if (state.isInitialized === false) {
-            commit("setProducts", data);
-            state.isInitialized = true;
-        }
+        var ref = realDb.ref('Products')
+        ref.once('value').then(function (snapshot) {
+            let arr = []
+            if (snapshot.val() != null) {
+                arr = Object.entries(snapshot.val()).map(e => Object.assign(e[1], { key: e[0] }))
+            }
+            commit('setProducts', arr)
+        });
     },
     setProduct({ state, commit }, id) {
         for (let i = 0; i < state.products.length; i++) {
@@ -35,4 +39,4 @@ export const getters = {
     getProduct(state) {
         return state.product;
     }
-}
+};

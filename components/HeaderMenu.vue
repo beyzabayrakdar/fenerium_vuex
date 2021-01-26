@@ -60,8 +60,14 @@
                     <nav class="right-nav">
                         <ul>
                             <li class="hidden-mobile">
-                                    <a href="/header/giris" data-toggle="modal" title="GİRİŞ YAP">GİRİŞ YAP</a>
+                                <a href="/header/giris" data-toggle="modal" title="GİRİŞ YAP">GİRİŞ YAP</a>
+                                <div>
+                                    <a href="/" v-if = "loggedIn" style="color = pink" @click="signOut">
+                                        Çıkış Yap
+                                    </a>
+                                </div>
                             </li>
+                            
                             <li class="hidden-mobile">
                                 <a href="/favorilerim" title="FAVORİLER">
                                     FAVORİLER
@@ -73,7 +79,11 @@
                             </li>
                                 <li class="desktop-last">
                                     <nuxt-link to="sepettekiurun" title="SEPETİM" data-toggle="open-shopping-basket">
-                                        <span class="hidden-mobile">SEPETİM</span>
+                                        <span class="hidden-mobile">SEPETİM
+                                            {{
+                                                totalBasketItemCount > 0 ? '(' + totalBasketItemCount + ')' : ''
+                                            }}
+                                        </span>
                                         <div class="icon-wrapper">
                                             <i class="icon fas fa-shopping-basket"></i>
                                             <span class="number secondary" data-toggle="basketCount">{{ basket.length }}</span>
@@ -987,9 +997,7 @@
 </template>
 
 <script>
-import * as firebase from 'firebase/app'
-import 'firebase/auth'
-import { getUserFromCookie, getUserFromSession } from '@/helpers'
+import firebase from "firebase";
 export default {
     data(){
         return {
@@ -999,7 +1007,17 @@ export default {
     computed: {
         basket(){
             return this.$store.getters["basket/getBasketItems"];
-        }
+        },
+        totalBasketItemCount() {
+            let count = 0
+            for (let i = 0; i < this.basket.length; i++) {
+                count += this.basket[i].count
+            }
+            return count
+        },
+        product(){
+            return this.$store.getters['product/getProduct'];
+        },
     },
     methods:{
        async signOut(){
@@ -1011,35 +1029,43 @@ export default {
             catch(error){
                 console.log(error)
             }
+        },
+        signOut() {
+        firebase
+            .auth()
+            .signOut()
+            .then(() => {
+            this.$router.replace({ name: "login" });
+            });
         }
-  },
-  asyncData({ req, redirect }) {
-    if (process.server) {
-      console.log('server', req.headers)
-      const user = getUserFromCookie(req)
-      //   console.log('b', getUserFromCookie(req))
-      if (!user) {
-        console.log('redirecting server')
-        redirect('/login')
-      }
-    } else {
-      var user =  this.$fire.auth.currentUser
-      if (!user) {
-        redirect('/login')
-      }
-      //   console.log($nuxt.$router)
+    },
+    asyncData({ req, redirect }) {
+        if (process.server) {
+        console.log('server', req.headers)
+        const user = getUserFromCookie(req)
+        //   console.log('b', getUserFromCookie(req))
+        if (!user) {
+            console.log('redirecting server')
+            redirect('/login')
+        }
+        } else {
+        var user =  this.$fire.auth.currentUser
+        if (!user) {
+            redirect('/login')
+        }
+        //   console.log($nuxt.$router)
+        }
+    },
+    created(){
+        firebase.auth().onAuthStateChanged(user=> {
+            this.loggedIn = !!user;
+            if(user){
+                this.loggedIn=true;
+            }
+            else{
+                this.loggedIn=false;
+            }
+        })
     }
-  },
-  created(){
-       this.$fire.auth.onAuthStateChanged(user=> {
-          this.loggedIn = !!user;
-          if(user){
-              this.loggedIn=true;
-          }
-          else{
-              this.loggedIn=false;
-          }
-      })
-  }
 }
 </script>

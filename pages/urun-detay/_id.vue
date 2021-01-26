@@ -236,7 +236,7 @@
                             <option value="2XL" data-select2-id="12">
                               2XL
                             </option>
-                            <option value="3XL"data-select2-id="13">
+                            <option value="3XL" data-select2-id="13">
                               3XL
                             </option>
                             <option value="4XL" data-select2-id="14">
@@ -584,7 +584,7 @@
                      background-image: url('https://fenerium.com/Fenerium/media/images/urunler/TK050E9Y01301.jpg');
                      "
             ></div>
-            <h2 class="title">Erkek Gri Tribun Basic Eşofman Altı</h2>
+            <h2 class="title">{{product.title}}</h2>
           </div>
         </div>
         <div class="form-item">

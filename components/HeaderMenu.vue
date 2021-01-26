@@ -997,7 +997,12 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import firebase from "firebase";
+=======
+import * as firebase from 'firebase'
+import 'firebase/auth'
+>>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
 export default {
     data(){
         return {
@@ -1057,7 +1062,11 @@ export default {
         }
     },
     created(){
+<<<<<<< HEAD
         firebase.auth().onAuthStateChanged(user=> {
+=======
+        this.$fire.auth.onAuthStateChanged(user=> {
+>>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
             this.loggedIn = !!user;
             if(user){
                 this.loggedIn=true;

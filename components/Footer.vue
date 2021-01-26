@@ -467,6 +467,7 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
 </template>
 
 <style scoped>
@@ -1013,3 +1014,6 @@ border-top-color: initial;
 border-left-color: rgb(52, 56, 58);
 }
 </style>
+=======
+</template>
+>>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416

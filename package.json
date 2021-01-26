@@ -39,4 +39,8 @@
         "@babel/react",
         "@babel/env"
     ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416

@@ -119,7 +119,7 @@
                     </div>
                   </div>
                 </div>
-                <button href="/" type="submit" class="btn bg-cobalt text-white text-bold">
+                <button href="/" @click="login" type="submit" class="btn bg-cobalt text-white text-bold">
                   OTURUM AÇ
                 </button>
               </form>
@@ -159,7 +159,26 @@ export default {
         .catch(error => {
           this.error = error
         })
-    }
+    },
+    login(e) {
+      e.preventDefault();
+      this.$fire.auth
+        .signInWithEmailAndPassword(this.email, this.password)
+        .then((res) => {
+          console.log("Giriş başarılı");
+          this.$store.commit("user/setUser", this.email);
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 1500);
+
+          this.error = false;
+          this.success = true;
+        })
+        .catch((err) => {
+          console.log("Giriş başarısız");
+          this.error = true;
+        });
+    },
   }
 }
 </script>

@@ -1,34 +1,43 @@
-import { mount } from "@vue/test-utils";
+import { mount, createLocalVue, config, shallowMount } from "@vue/test-utils";
+import sepetim from "../pages/header/sepetim.vue";
+import { getters, mutations, actions, state } from "../store/basket";
 
-import Sepet from "../components/Sepet.vue";
+config.mocks["$store"] = {
+    state: {...state },
+    getters: {
+        "basket/getBasketItems": {...state }
+    },
+    actions: {
+        "basket/removeBasketItem": {...actions }
+    },
+    mutations: {
+        ...mutations
+    }
+};
 
-describe("Sepet.vue", () => {
-    let wrapper = mount(Sepet);
-    it("There is a Sepetim", () => {
+describe("sepetim.vue", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("Sepetim");
     });
-    it("There is a Sepeti Temizle", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("Sepeti Temizle");
     });
-    it("There is a Erkek Antrasit Tribün Nos Tek Alt", () => {
-        expect(wrapper.text()).toContain("Erkek Antrasit Tribün Nos Tek Alt");
-    });
-    it("There is a İndirim Tutarı", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("İndirim Tutarı");
     });
-    it("There is a Toplam Tutar", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("Toplam Tutar");
     });
-    it("There is a Ürünü Sil", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("Ürünü Sil");
     });
-    it("There is a Ürünü Satın Almak İçin Kalan Süreniz:", () => {
-        expect(wrapper.text()).toContain("Ürünü Satın Almak İçin Kalan Süreniz:");
-    });
-    it("There is a SATIN AL", () => {
+    it("Render", () => {
+        let wrapper = shallowMount(sepetim);
         expect(wrapper.text()).toContain("SATIN AL");
-    });
-    it("There is a Sepetinizde ürün bulunmamaktadır.", () => {
-        expect(wrapper.text()).toContain("Sepetinizde ürün bulunmamaktadır.");
     });
 });

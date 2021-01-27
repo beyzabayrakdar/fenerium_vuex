@@ -1,53 +1,6 @@
 <template>
   <main>
-<<<<<<< HEAD
     <div id="primaryOverlay" ></div>
-=======
-    <div id="primaryOverlay"></div>
-
-    <script>
-      window.MainCategoryCode = ["BE", "AT", "TK"];
-      window.CategoryCode = [
-        "224",
-        "011",
-        "050",
-        "243",
-        "tekaltantrenmanbasketbol",
-        "tekaltantrenmanfutbol",
-        "tekaltantrenmanvoleybol",
-        "016",
-        "012",
-        "514",
-        "115",
-        "138",
-        "239",
-        "sortantrenmanfutbol",
-        "sortantrenmanvoleybol",
-        "017",
-        "240",
-        "sweatshirtantrenmanbasketbol",
-        "sweatshirtantrenmanvoleybol",
-        "sweatshirtantrenmanfutbol",
-        "242",
-        "153",
-        "010",
-        "241",
-        "tshirtantrenmanbasketbol",
-        "tshirtantrenmanfutbol",
-        "tshirtantrenmanvoleybol",
-        "015",
-        "yagmurlukantrenmanfutbol",
-        "yagmurlukantrenmanvoleybol",
-      ];
-      window.Gender = "E";
-      window.Season = ["9Y", "9S", "9K", "AY", "AS", "AK", "BK"];
-      window.Keyword = "";
-      window.Favourites = [];
-      window.Key = "3a237372-733c-4621-af90-4a905869310a";
-      window.filterTranslate = null;
-    </script>
-
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
     <section class="primary-breadcrumb d-none d-lg-block">
       <div class="container">
         <ul
@@ -104,12 +57,8 @@
                       class="btn btn-close"
                       data-toggle="filter-sidebar"
                     >
-<<<<<<< HEAD
                       
                       <i class="fa fa-times" aria-hidden="true"></i>
-=======
-                      <i class="icon icon-close"></i>
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
                     </button>
                   </div>
                   <div class="accordion tertiary" id="accordionFilter">
@@ -496,7 +445,7 @@
                         aria-controls="collapseGenderFilter"
                         data-index="0"
                       >
-                        Cinsiyet<i class="icon icon-plus"></i>
+                        Cinsiyet<i class="fa fa-plus" aria-hidden="true"></i>
                       </h2>
                       <div
                         id="collapseGenderFilter"
@@ -537,7 +486,7 @@
                         aria-controls="collapsePriceFilter"
                         data-index="0"
                       >
-                        Fiyat<i class="icon icon-plus"></i>
+                        Fiyat<i class="fa fa-plus" aria-hidden="true"></i>
                       </h2>
                       <div
                         id="collapsePriceFilter"
@@ -610,7 +559,7 @@
                         aria-controls="collapseSizeFilter"
                         data-index="0"
                       >
-                        Beden<i class="icon icon-plus"></i>
+                        Beden<i class="fa fa-plus" aria-hidden="true"></i>
                       </h2>
                       <div
                         id="collapseSizeFilter"
@@ -687,7 +636,7 @@
                         aria-controls="collapseColorFilter"
                         data-index="0"
                       >
-                        Renk<i class="icon icon-plus"></i>
+                        Renk<i class="fa fa-plus" aria-hidden="true"></i>
                       </h2>
                       <div
                         id="collapseColorFilter"
@@ -905,7 +854,6 @@
                   </form>
                 </div>
                 <div class="product-card-list">
-<<<<<<< HEAD
                   <div
                     class="deneme"
                     v-if="productLength<0"
@@ -925,29 +873,11 @@
                         ><div class="card product-card">
                           <div class="card-img">
                             <img :src="item.image" class="img-fluid" /><button
-=======
-                  <div class="row">
-                    <div v-for="(item, index) in products" :key="index"
-                      class="col-xl-6 col-md-8 col-12">
-                      <a
-                        :to="'/urun-detay/' + urun.id"
-                        class="card-link"
-                        ><div class="card product-card">
-                          <div class="card-img">
-                            <img
-                              :src="item.image"
-                              class="img-fluid"
-                            /><button
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
                               class="btn btn-icon-link"
                               data-toggle="addToFavorite"
                               data-id="TK050EAK08305"
                             >
-<<<<<<< HEAD
                               <i class="fa fa-heart" aria-hidden="true"></i>
-=======
-                              <i class="icon icon-heart-outline"></i>
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
                             </button>
                             <div class="color-chart">
                               <div
@@ -972,7 +902,6 @@
                             <div class="text-wrapper">
                               <div class="card-title">
                                 {{ item.title }}
-<<<<<<< HEAD
                               </div>
                             </div>
                             <div class="text-wrapper price">
@@ -981,14 +910,6 @@
                                 {{ item.price }} TL
                               </div>
                             </div>
-=======
-                              </div>
-                            </div>
-                            <div class="text-wrapper price">
-                              <div class="text">149.95 TL</div>
-                              <div class="text type-fade d-none">{{ item.price }} TL</div>
-                            </div>
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
                           </div>
                         </div></a
                       >
@@ -999,12 +920,8 @@
               <div class="filter-section">
                 <div class="section-footer">
                   <div class="content-counter">
-<<<<<<< HEAD
                     <span class="current-count"
                       >Toplam <span class="count">24</span></span
-=======
-                    <span class="current-count">Toplam <span class="count">24</span></span
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
                     ><span class="text">/</span
                     ><span class="total-count"
                       ><span class="count">197</span> İçerik</span
@@ -1031,24 +948,20 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import { mapActions, mapGetters, mapState } from "vuex";
-=======
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
+import axios from "axios";
 export default {
+  mounted() {
+    const messageRef = this.$fire.database.ref("/");
+    axios.get(messageRef.toString() + ".json").then((res) => {
+      console.log(res.data);
+      this.urunler = res.data;
+    });
+  },
   data() {
     return {
       urunler: [],
-<<<<<<< HEAD
     };
-  },
-  computed: {
-    ...mapState({
-      products: (state) => state.product.products,
-    }),
-    productLength() {
-      return this.products != null ? this.products.length : -1;
-    },
   },
   created() {
     this.$store.dispatch("product/initData");
@@ -1062,25 +975,6 @@ export default {
       };
       this.$store.dispatch("basket/addBasket", payload);
     },
-=======
-      
-    };
-  },
-  computed: {
-    products(){
-      return this.$store.getters["product/getProducts"];
-    }
-  },
-  methods: {
-    addBasket(item){
-      const payload = {
-        id: Math.random() * 1000,
-        count: 1,
-        product: item
-      };
-      this.$store.dispatch("basket/addBasket", payload);
-    }
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
   },
 };
 </script>

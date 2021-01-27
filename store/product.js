@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { realDb, auth } from '../plugins/firebase.js';
 import firebase from "firebase";
-=======
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
 export const state = () => ({
     isInitialized: false,
     products: [],
@@ -18,7 +15,6 @@ export const mutations = {
 };
 export const actions = {
     initData({ state, commit }, ) {
-<<<<<<< HEAD
         var ref = realDb.ref('Products')
         ref.once('value').then(function (snapshot) {
             let arr = []
@@ -26,16 +22,6 @@ export const actions = {
                 arr = Object.entries(snapshot.val()).map(e => Object.assign(e[1], { key: e[0] }))
             }
             commit('setProducts', arr)
-=======
-
-        this.$fire.firestore.collection('fenerium-data').get().then(snapshot => {
-            let tempItems = [];
-            snapshot.forEach(data => {
-                tempItems.push(data.data());
-            });
-            commit("setProducts", tempItems);
-
->>>>>>> 800662e7f4debe0c3c52e131c92e151d6f15b416
         });
     },
     setProduct({ state, commit }, id) {
